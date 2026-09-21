@@ -1,0 +1,78 @@
+.home-nav {
+  width: 100%;
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.373);
+}
+
+.list-home {
+  flex: 1;
+}
+.logo {
+  flex: none;
+}
+.login-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex: none;
+}
+
+.list-home ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.list-home ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 400;
+}
+.list-home ul li {
+  padding: 3px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.list-home ul li:hover {
+  box-shadow: 0px 0px 5px black;
+}
+
+.logo h2 {
+  color: rgb(57, 6, 101);
+  font-weight: bolder;
+  font-family: cursive;
+  margin: 0px;
+  padding: 0px;
+}
+
+.login-home span {
+  color: rgb(3, 3, 86);
+}
+.login-home .btn-login {
+  border: 2px solid rgba(0, 0, 0, 0.159);
+  border-radius: 20px;
+  color: rgb(7, 7, 137);
+  background-color: transparent;
+  padding: 5px;
+}
+.login-home .btn-logout {
+  border: 2px solid rgba(0, 0, 0, 0.159);
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(12, 12, 169);
+  padding: 5px;
+}

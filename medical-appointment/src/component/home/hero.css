@@ -1,0 +1,39 @@
+
+
+
+
+
+ 
+
+
+.hero-img {
+  border: 2px solid red;
+  
+}
+.hero-img img {
+width: 400px;
+object-fit: cover;
+}
+.hero-text {
+  border: 2px solid red;
+  margin-top: 30px;
+}
+.hero-title{
+    font-family: 'Times New Roman', Times, serif;
+}
+.hero-subtitle{
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.search-box{
+    background-color: blueviolet;
+    padding: 10px;
+}
+.search-box input{
+    height: 30px;
+    border-radius: 20;
+}
+.search-box .search-box-btn {
+   height: 30px;
+}
