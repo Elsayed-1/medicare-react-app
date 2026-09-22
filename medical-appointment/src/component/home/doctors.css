@@ -1,0 +1,38 @@
+
+
+.headDoctorshome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+}
+.carddoc{
+     margin: 30px 0px;
+}
+
+.onedoctor{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 15px;
+padding: 5px;
+border: 1px rgba(0, 0, 0, 0.267) solid;
+border-radius: 20px;
+}
+
+.imgdoc img{
+    border: 1px red solid;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 0px;
+    border-radius: 50%;
+}
+
+.name{
+    display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 10px;
+}
+ 

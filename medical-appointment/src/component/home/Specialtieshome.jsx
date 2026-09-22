@@ -7,7 +7,7 @@ function Specialtieshome() {
       <div className="container-lg">
         <div className="row   ">
           {specialtiesData.map((item) => {
-            return <div key={item.id} className="col-5 col-md-6 col-lg-4 col-xl-3">
+            return <div  key={item.id} className=" align-items-center col-5 col-md-6 col-lg-4 col-xl-3">
   <div className="onespecial">
     <div className="special-icon">
          <item.icon color={item.color} size={25}/>
