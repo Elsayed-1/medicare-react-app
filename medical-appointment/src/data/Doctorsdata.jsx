@@ -1,11 +1,4 @@
-export const specialties = [
-  { id: '1', name: 'Dentist', icon: 'bi-gear-wide', count: 12 },
-  { id: '2', name: 'Cardiologist', icon: 'bi-heart-pulse', count: 15 },
-  { id: '3', name: 'Dermatologist', icon: 'bi-person', count: 10 },
-  { id: '4', name: 'Pediatrics', icon: 'bi-emoji-smile', count: 8 },
-  { id: '5', name: 'Neurologist', icon: 'bi-activity', count: 6 },
-  { id: '6', name: 'Orthopedics', icon: 'bi-person-walking', count: 9 },
-];
+ 
 
 export const doctorsData = [
   {

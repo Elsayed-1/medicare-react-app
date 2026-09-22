@@ -2,6 +2,7 @@
 import './App.css'
 import Mynav from "../src/component/common/Navbar"
 import Hero from './component/home/Hero'
+import Home from './component/home/Home'
 function App() {
  
 
@@ -9,7 +10,7 @@ function App() {
     <>
     <div>
       <Mynav/>
-      <Hero/>
+      <Home/>
     </div>
    
     </>

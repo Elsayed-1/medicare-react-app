@@ -1,39 +1,72 @@
 
-
-
-
-
  
-
-
+ .hero{
+    width: 100%;
+    background-color: #ebf3ff;
+ }
 .hero-img {
   border: 2px solid red;
+  margin-top: 30px;
+  display: flex;
+    align-items: center;
+    justify-content: flex-end;
   
 }
 .hero-img img {
-width: 400px;
+width: 300px;
 object-fit: cover;
+border: 2px solid black;
 }
 .hero-text {
-  border: 2px solid red;
-  margin-top: 30px;
+  /* border: 2px solid red; */
+  margin : 30px  auto;
+  
 }
 .hero-title{
     font-family: 'Times New Roman', Times, serif;
+color: rgb(57, 6, 101);
+text-align: center;
 }
 .hero-subtitle{
     font-weight: 300;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(57, 6, 101);
+    text-align: center;
 }
 
 .search-box{
-    background-color: blueviolet;
+    background-color: rgba(128, 128, 128, 0.151);
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #fff;
+    /* gap: 10px; */
+}
+.search-bg{
+     border: 1px rgba(0, 0, 0, 0.066) solid;
+     border-radius: 20px;
+     background-color: rgba(255, 255, 255, 0.984);
+      display: flex;
+    align-items: center;
+    justify-content: center;
+     margin: 5px;
+     flex-grow: 1;
+     padding: 5px;
+     gap: 10px;
 }
 .search-box input{
     height: 30px;
     border-radius: 20;
+    background-color: transparent;
+    width: 90%;
+    border: none;
 }
 .search-box .search-box-btn {
-   height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(53, 53, 216);
+    color: white;
+    padding: 15px;
 }
