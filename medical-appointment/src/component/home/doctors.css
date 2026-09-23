@@ -9,7 +9,11 @@
 .carddoc{
      margin: 30px 0px;
 }
-
+.Alldoctors{
+    display: flex;
+align-items: center;
+justify-content: center;
+}
 .onedoctor{
 display: flex;
 align-items: center;
@@ -18,14 +22,21 @@ gap: 15px;
 padding: 5px;
 border: 1px rgba(0, 0, 0, 0.267) solid;
 border-radius: 20px;
+transition: all .3s ease;
 }
 
+.onedoctor:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+
 .imgdoc img{
-    border: 1px red solid;
-    width: 100px;
-    height: 100px;
+    
+    width:70px;
+    height: 70px;
     object-fit: cover;
-    border-radius: 0px;
+    
     border-radius: 50%;
 }
 
@@ -36,3 +47,8 @@ justify-content: space-between;
 gap: 10px;
 }
  
+
+.position p span{
+    font-size: 10px;
+    font-weight: 200;
+}
