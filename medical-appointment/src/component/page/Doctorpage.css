@@ -1,121 +1,172 @@
+ 
 
-
-.doctor-page{
-    width: 100%;
-    border:  2px red solid;
-     height: auto;
-    margin: 10px 0px;
+.page{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
-   background-color: rgba(0, 255, 255, 0.164);
-
-}
-
-.doc-filter{
-    height: 100%;
-    width: 30%;
-    border: 2px black solid;
-    border-radius: 20px;
-}
-
-.search-doc-sec{
-    margin: 20px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
+    width: 100%;
+    min-height: auto;
+    border: 2px rebeccapurple solid;
+    margin: 10px 0px;
 }
-.searchdiv{
-    width: 70%;
-    background-color: white;
+
+.page .filter-sec{
+    width: 250px;
+    flex-shrink: 0;
+      /* height: 70vh; */
+    border: 2px rebeccapurple solid;
+    box-sizing: border-box;
+}
+
+.filter-data{
+    padding: 10px;
+}
+.head-filter p{
+    font-weight: 500;
+}
+
+.special-item{    
+        display: flex;
+    align-items: center;
+    margin: 5px 0px 5px 10px;
+    
+}
+.special-item label{
+    margin-left: 10px;
+     font-size: 17px;
+}
+.special-item input{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.head-rating p{
+    font-weight: 500;
+}
+
+
+.rating-filter{
+    padding: 10px;
+}
+
+.rating-item{
+         display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    margin: 5px 0px 5px 10px;
+}
+.rating-filter label{
+  margin-left: 10px;
+     
+}
+.rating-filter input{
+     width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+.page .doctorlist-sec{
+flex: 1;
+  
+    border: 2px rebeccapurple solid;
+     padding: 10px;
+      box-sizing: border-box;
+    min-width: 0;
+}
+.doctorlist-search  {
+    background-color: #F3F4F6;
      display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    border-radius: 20px;
-    padding: 10px;
-    
-}
-.searchdiv span{
-    padding: 3px;
-}
-.search-doc-sec input{
-width: 90%;
-border: none;
-}
-
-.search-doc-sec select{
-border-radius: 20px;
-width: 20%;
-padding: 8px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.doc-sec{
-    height: 100%;
-    width: 60%;
-    border: 2px black solid; 
-    border-radius: 20px;
-}
-
-.All-doc-sec{
+    gap: 5px;
     padding: 5px;
-}
- .element{
-    
-   margin: 10px 0px;
-    /* border: 2px red solid;  */
-    background-color: white;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.653);
- }
-.img-ele img{
-width: 120px;
-height: 120px;
-object-fit: cover;
+   
+
+}
+
+.doctorlist-search  input{
+   flex: 1;
+   border: none;
+     padding: 5px;
+     border-radius: 20px;
+     min-width: 0;
+       outline: none;
+   
+}
+.doctorlist-search  span{
+   width: 40px;
+   flex-shrink: 0;
+   text-align: center;
+}
+
+
+
+/****list-doc*********/
+
+
+.doctorlist-doctors{
+    margin: 20px 0px;
+}
+
+
+.one-doc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     box-sizing: border-box;
+     padding: 10px;
+}
+
+
+.data-doc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.data-doc p{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+.doc-img img{
+width: 100px;
+height: 100px;
 border-radius: 20px;
+object-fit: cover;
 }
 
-.element{
-    display: flex;
-    align-items: center;
-     justify-content: space-around;
-}
 
-.one-ele{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    /* border: 3px red solid; */
-     gap: 20px;
-
-}
-
-.heartandbtn{
-    /* border: 2px red solid; */
+.Book-Appointment{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: end;
     gap: 20px;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
-.heartandbtn button{
-    border: none;
-background-color: rgb(53, 53, 216);
-color: white;
-border-radius: 10px;
+.Book-Appointment button{
+border: none;
 padding: 10px;
+border-radius: 20px;
+background-color: #7C3AED;
+color: white;
+}
+.Book-Appointment button:hover{
+    background-color: #6D28D9;
+}
+.Book-Appointment  span{
+    
+width: 40px;
+text-align: center;
 }
