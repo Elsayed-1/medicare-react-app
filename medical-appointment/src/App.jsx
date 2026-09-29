@@ -1,22 +1,23 @@
+import "./App.css";
+import Mynav from "../src/component/common/Navbar";
  
-import './App.css'
-import Mynav from "../src/component/common/Navbar"
-import Hero from './component/home/Hero'
-import Home from './component/home/Home'
-import Page from './component/page/Page'
+import Home from "./component/home/Home";
+ 
+import { Route, Routes } from "react-router-dom";
+import Doctorpage from "./component/page/Doctorpage";
 function App() {
- 
-
   return (
     <>
-    <div>
-      <Mynav/>
-      <Home/>
-      <Page/>
-    </div>
-   
+      <div>
+        <Mynav />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/doctors" element={<Doctorpage />} />
+        </Routes>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

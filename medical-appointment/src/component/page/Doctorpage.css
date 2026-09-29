@@ -1,24 +1,40 @@
  
 
+/*head*/
+
+.page-head{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+
+
 .page{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     gap: 10px;
     width: 100%;
     min-height: auto;
-    border: 2px rebeccapurple solid;
+    /* border: 2px rebeccapurple solid; */
     margin: 10px 0px;
 }
-
 .page .filter-sec{
     width: 250px;
     flex-shrink: 0;
       /* height: 70vh; */
-    border: 2px rebeccapurple solid;
+    /* border: 2px rebeccapurple solid; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.178);
     box-sizing: border-box;
 }
-
 .filter-data{
     padding: 10px;
 }
@@ -44,12 +60,11 @@
 
 .head-rating p{
     font-weight: 500;
+    margin-top: 15px;
 }
 
 
-.rating-filter{
-    padding: 10px;
-}
+ 
 
 .rating-item{
          display: flex;
@@ -72,8 +87,9 @@
 
 .page .doctorlist-sec{
 flex: 1;
-  
-    border: 2px rebeccapurple solid;
+    /* border: 2px rebeccapurple solid; */
+    border-radius: 20px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.178);
      padding: 10px;
       box-sizing: border-box;
     min-width: 0;

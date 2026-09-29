@@ -1,7 +1,10 @@
 import React from 'react'
 import { BsSearch } from 'react-icons/bs';
 import "./Navbar.css"
+import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 function Navbar() {
+  const naveg=useNavigate()
   return (
     <div className='home-nav'>
       <div className="navbar">
@@ -10,12 +13,12 @@ function Navbar() {
               <h2>SEKAKO</h2>
             </div>
             <div className="list-home">
-              <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">Doctors</a></li>
-                <li><a href="">specialties</a></li>
-                <li><a href="">about</a></li>
-              </ul>
+             <ul>
+  <li><Link to="/">home</Link></li>
+  <li><Link to="/doctors">Doctors</Link></li>
+  <li><Link to="/specialties">specialties</Link></li>
+  <li><Link to="/about">about</Link></li>
+</ul>
             </div>
             <div className="login-home">
               <span className='search-icon'> <BsSearch/> </span>

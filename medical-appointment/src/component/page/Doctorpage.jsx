@@ -13,7 +13,11 @@ import Doctorshome from "../home/Doctorshome";
 function Doctorpage() {
   return (
     <div className="container-lg">
+       <div className="page-head">
+          <h1>Find Your Doctor & Book an Appointment</h1>
+        </div>
       <div className="page">
+       
         <div className="filter-sec">
 
   <div className="filter-data">
