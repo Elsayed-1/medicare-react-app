@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./Doctorpage.css";
-import { doctorsDatafilter } from "../../data/Doctorsdatafilter";
+import "../Doctorsfilter/Doctorpage.css"
+import { doctorsDatafilter } from "../../../data/Doctorsdatafilter";
 import {
   FaStar,
   FaMapMarkerAlt,
@@ -9,7 +9,8 @@ import {
   FaStarHalfAlt,
 } from "react-icons/fa";
 import { BsSearch } from "react-icons/bs";
-import Doctorshome from "../home/Doctorshome";
+import Doctorshome from "../../home/Doctorshome";
+import { Link } from "react-router-dom";
 
 
 
@@ -34,7 +35,10 @@ function Showcontent({data}) {
                 <div key={item.id} className="one-doc">
                   <div className="data-doc">
                     <div className="doc-img">
-                      <img src={item.image} alt="" />
+                      <Link to={`/profile/${item.id}`}>
+                            <img src={item.image} alt="" />
+                      </Link>
+                
                     </div>
                     <div className="doc-details">
                              <h6>{item.name}</h6>

@@ -7,7 +7,7 @@ export const doctorsDatafilter = [
     reviewsCount: 30,
     location: 'Mansoura, Egypt',
     experienceYears: 2,
-    languages: ['Arabic', 'English'],
+    languages: ['Arabic   ', 'English'],
     image: 'https://randomuser.me/api/portraits/men/1.jpg',
     about: 'Dr. Ahmed Fouad - Experienced dentist specializing in general dentistry, cosmetic procedures, and dental implants.',
     education: ['Bachelor of Dental Surgery - Mansoura University', 'Master\'s in Cosmetic Dentistry'],

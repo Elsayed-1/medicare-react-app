@@ -1,0 +1,30 @@
+
+
+.profile{
+    width: 100%;
+    border: 2px red solid;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: rgb(57, 6, 101);
+    font-family: sans-serif;
+}
+
+.pro-img img{
+    width: 300px;
+    border-radius: 20px;
+}
+
+.pro-data h1{
+    font-weight: 700;
+    font-size: 50px;
+}
+.pro-data h3{
+    margin: 5px 0px;
+}
+
+.loc-exe{
+    display: flex;
+    gap: 40px;
+}
