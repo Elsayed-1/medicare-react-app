@@ -1,0 +1,16 @@
+
+
+.about{
+    border: 3px red solid;
+    margin-top: 20px;
+    border-radius: 20px;
+} 
+.about p{
+    color: #374151;
+}
+.about-body{
+    margin: 0px 10px ;
+}
+.about-education{
+      margin: 0px 10px ;
+}

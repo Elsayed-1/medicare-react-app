@@ -1,0 +1,29 @@
+
+
+.booking{
+      border: 2px red solid;
+      margin : 20px 0px;
+      border-radius: 20px;
+}
+ 
+
+.avaliabletime{
+    /* margin: 10px 0px; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.avaliabletime .btn-available{
+border: 1px red solid;
+padding: 10px;
+border-radius: 10px;
+margin: 3px;
+font-size: 20px;
+font-weight: 500;
+
+}
+.avaliabletime .btn-available:hover{
+  transform: scale(1.09);
+  color: indigo;
+    cursor: pointer;
+}

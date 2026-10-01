@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+
+.doc-prof{
+    border: 3px red solid;
+    display: flex;
+     align-items: flex-start;
+     gap: 30px;
+margin-top: 20px;
+ font-family: 'Inter', sans-serif;
+ background-color: white;
+ border-radius: 20px;
+}
+ 
+.img-doc-prof img{
+width: 250px;
+object-fit: cover;
+border-radius: 20px;
+margin: 0px 10px;
+}
+
+ .nameandlove{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+ }
+  .nameandlove h1{
+    color:#1E293B ;
+  }
+.specialty{
+    color: #0E7490;
+}
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+/* .location p{
+    min-width: 0px;
+} */
