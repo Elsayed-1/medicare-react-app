@@ -18,7 +18,11 @@ function BookingAppointment({doctors}) {
      <DatePicker  selected={startDate} onChange={(date) => setStartDate(date)} inline />
       {/* {console.log(startDate.getHours())} */}
     </div>
+     <div className="head-available">
+        <h3>Available time</h3>
+      </div>
     <div className="avaliabletime">
+     
          {doctors.availableSlots['2026-09-20']?.map((time,index)=>{
             return <button className='btn-available' key={index} >{time}</button>
          })}

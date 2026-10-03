@@ -28,3 +28,16 @@
     display: flex;
     gap: 40px;
 } */
+
+.profile{
+    background-color: #F3F6FB;
+    padding: 20px;
+}
+
+.profile-component{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+ 

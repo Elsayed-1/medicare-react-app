@@ -24,15 +24,24 @@ function Profile() {
 
   return (
     
-    <div className="container-lg">
+    <div className="container-lg profile">
 
        <Link to="/doctors" className="back-link">
         <FaArrowLeft /> Back to Doctors
       </Link>
 
-     <Doctorinfo doctors={isexist}/>
+
+<div className="profile-component">
+  <div className="data-and-about">
+        <Doctorinfo doctors={isexist}/>
   <Doctorinfoabout doctors={isexist}/>
+  </div>
+  <div className="Availabledate">
   <BookingAppointment doctors={isexist}/>
+
+  </div>
+</div>
+ 
     </div>
       
      

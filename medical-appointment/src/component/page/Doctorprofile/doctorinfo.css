@@ -4,7 +4,7 @@
 
 
 .doc-prof{
-    border: 3px red solid;
+    /* border: 3px red solid; */
     display: flex;
      align-items: flex-start;
      gap: 30px;
@@ -12,6 +12,8 @@ margin-top: 20px;
  font-family: 'Inter', sans-serif;
  background-color: white;
  border-radius: 20px;
+ padding: 5px;
+ box-shadow: 0px 0px 10px 	rgba(0, 0, 0, 0.2);
 }
  
 .img-doc-prof img{
