@@ -28,7 +28,7 @@ function Doctorinfo({doctors}) {
         <div className="data-doc-prof">
             <div className="nameandlove">
                 <h1>{doctors.name}</h1>
-                    <FaRegHeart color='#374151' size="20" />
+                   <p><FaRegHeart  className='heart-data-icon'   /></p> 
             </div>
             
             <p className='specialty'>{doctors.specialty}</p>

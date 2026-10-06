@@ -9,11 +9,14 @@
         display: flex;
         flex-direction: column;
         padding: 10px;
-        align-items: stretch;
+         justify-content: stretch;
+       
         
 }
  
-
+.book-date{
+  text-align: center;
+}
 .avaliabletime{
     /* margin: 10px 0px; */
     display: flex;
@@ -37,4 +40,21 @@ font-weight: 500;
   transform: scale(1.09);
   color: indigo;
     cursor: pointer;
+}
+ 
+.custoumtime{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.yourdate{
+border: 1px rgba(0, 0, 0, 0.268) solid;
+border-radius: 10px;
+  padding: 5px;
+  font-weight: 500;
+}
+.specifictime{
+    font-weight: 500;
 }

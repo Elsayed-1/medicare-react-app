@@ -5,17 +5,24 @@
 
 .doc-prof{
     /* border: 3px red solid; */
+    width: 100%;
     display: flex;
      align-items: flex-start;
-     gap: 30px;
+     gap: 8px;
 margin-top: 20px;
  font-family: 'Inter', sans-serif;
  background-color: white;
  border-radius: 20px;
  padding: 5px;
  box-shadow: 0px 0px 10px 	rgba(0, 0, 0, 0.2);
-}
  
+}
+ .data-doc-prof{
+    flex: 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+ }
 .img-doc-prof img{
 width: 250px;
 object-fit: cover;
@@ -25,10 +32,21 @@ margin: 0px 10px;
 
  .nameandlove{
     display: flex;
-    align-items: center;
+    flex: 1;
+    align-items:center;
     /* border: 2px solid red; */
     justify-content: space-between;
+    
  }
+  .nameandlove .heart-data-icon{
+    font-size: 25px;
+cursor: pointer;
+  color: #64748B;
+  transition: color 0.2s ease;
+  }
+    .nameandlove .heart-data-icon:hover{
+        color: #EF4444;
+    }
   .nameandlove h1{
     color:#1E293B ;
   }
@@ -36,11 +54,29 @@ margin: 0px 10px;
     color: #0E7490;
 }
 .location{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 30px;
+    /* border: 2px red solid; */
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
 }
-/* .location p{
-    min-width: 0px;
-} */
+.location p{
+margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+    
+    
+}
+
+@media (max-width:625px){
+    .doc-prof{
+  align-items: center;
+    }
+    .location{
+        flex-direction: column;
+    }
+    .nameandlove{
+        flex-direction: column; 
+    }
+}
