@@ -1,0 +1,24 @@
+/* تنسيقات خاصة بصفحة المفضلة لو احتجتها */
+.container-lg {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.page-head h1 {
+  color: #1E293B;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.doctorlist-doctors {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.no-favorites {
+  font-size: 18px;
+  font-weight: 500;
+}
