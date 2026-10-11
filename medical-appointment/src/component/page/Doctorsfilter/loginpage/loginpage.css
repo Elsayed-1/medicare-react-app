@@ -1,0 +1,70 @@
+
+
+.log{
+    /* border: 2px red solid; */
+    background-color: #F3F6FC;   
+   height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.log_content{
+    border: #E4EBF5 1px solid;
+     width: 60%;
+     height: auto;
+    padding: 10px;
+    background-color:white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.244) ;
+    
+}
+.log_head{
+    text-align: center;
+    margin: 20px 0px;
+    color: #1E293B;
+}
+ 
+
+.Log_body div {
+        /* border: 2px red solid; */
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+}
+.Log_body div input{
+background-color: #F8FAFD;
+border: 1px solid #D6DFEC;
+padding: 8px;
+border-radius: 12px;
+outline: none;
+}
+.Log_body div input{
+    width: 100%;
+}
+.textandbtn{
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+}
+.btn-sign{
+    margin: 20px  0px;
+    width: 60%;
+   padding: 8px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1A73E8;
+    color: white;
+
+}
+.textandbtn p{
+    color: #64748B;
+    
+}
+.textandbtn p span{
+    color: #1A73E8;
+    cursor: pointer;
+}

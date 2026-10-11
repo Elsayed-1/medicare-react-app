@@ -62,6 +62,7 @@ text-align: center;
     background-color: transparent;
     width: 90%;
     border: none;
+    outline: none;
 }
 .search-box .search-box-btn {
     border: none;

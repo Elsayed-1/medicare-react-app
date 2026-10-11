@@ -11,7 +11,7 @@ import {
 import { BsSearch } from "react-icons/bs";
 import Doctorshome from "../../home/Doctorshome";
 import { Link } from "react-router-dom";
-import { usefavorites } from "../../../context/Contextfavo";
+import { usefavorites } from "../../../context/favoritecontext/Contextfavo";
 
 function filterbyinputsearch(data, inputsearch, checkeditem, filterstars) {
   return data.filter((e) => {

@@ -3,8 +3,15 @@ import { BsSearch } from 'react-icons/bs';
 import "./Navbar.css"
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext/Authenticationcxt';
 function Navbar() {
   const naveg=useNavigate()
+  const {islogged,logout,user}=useAuth()
+  const user_name=user.email.split("@")[0].split("1")[0]
+ function handellogout(){
+logout()
+naveg("/login")
+ }
   return (
     <div className='home-nav'>
       <div className="navbar">
@@ -22,9 +29,17 @@ function Navbar() {
 </ul>
             </div>
             <div className="login-home">
-              <span className='search-icon'> <BsSearch/> </span>
+              {islogged? <span> Hi , {user_name}</span>:""}
+              {/* <span className='search-icon'> <BsSearch/> </span> */}
+{console.log(user_name)}
+{islogged?<button className='btn-logout' onClick={()=>handellogout()} >Logout</button>:  
+<Link to="/Login">
 <button className='btn-login' >Login</button>
-<button className='btn-logout' >Logout</button>
+</Link>}
+
+
+
+
             </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaMapMarkerAlt, FaRegHeart, FaHeart } from 'react-icons/fa';
-import { usefavorites } from '../../context/Contextfavo';
+import { usefavorites } from '../../context/favoritecontext/Contextfavo';
 import "../doctorfavorite/favoitem.css";
 
 function Favoriteitem() {
