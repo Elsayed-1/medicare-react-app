@@ -7,7 +7,7 @@ import { useAuth } from '../../context/AuthContext/Authenticationcxt';
 function Navbar() {
   const naveg=useNavigate()
   const {islogged,logout,user}=useAuth()
-  const user_name=user.email.split("@")[0].split("1")[0]
+  const user_name=user?.email?.split("@")[0]  
  function handellogout(){
 logout()
 naveg("/login")

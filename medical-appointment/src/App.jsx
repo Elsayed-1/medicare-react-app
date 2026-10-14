@@ -41,13 +41,15 @@ function AppRoutes() {
 // 2️⃣ الـ App الأساسي بيغلف كل حاجة بالـ Provider
 function App() {
   return (
+     <Authprovider>
     <FavoritesProvider>
-      <Authprovider>
+     
         <div className="App">
           <AppRoutes />
         </div>
-      </Authprovider>
+   
     </FavoritesProvider>
+       </Authprovider>
   );
 }
 

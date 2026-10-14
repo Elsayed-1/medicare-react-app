@@ -1,17 +1,28 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import { useAuth } from "../AuthContext/Authenticationcxt";
 
 
 const contextfavo=createContext();
 
 export function FavoritesProvider({children}){
+
+     const {user}=useAuth()
+
+     const localStoragekey=user?.email ?`favoritedata_${user.email}`:"favoritedata_guest"
+      
     const [favo,setFavo]=useState(()=>{
-        const save =localStorage.getItem("favodata")
+        const save =localStorage.getItem(localStoragekey)
         return save?JSON.parse(save):[]
     } )
-
+//لما اغير حسابي هعرف منين اجيب الداتا القديمه من الداله الي تحت دي هتجيب بناءا علي المفتاح وتعتمد عل تغير المستخدم
     useEffect(()=>{
-        localStorage.setItem("favodata",JSON.stringify(favo))
-         },[favo])
+        const save=localStorage.getItem(localStoragekey)
+        setFavo(save?JSON.parse(save):[])
+    },[user?.email])
+////////////////////////////////////
+    useEffect(()=>{
+        localStorage.setItem(localStoragekey,JSON.stringify(favo))
+         },[favo,localStoragekey])
 
     const toggle=(object)=>{
         setFavo((prev)=>{
