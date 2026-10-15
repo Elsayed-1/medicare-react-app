@@ -10,8 +10,10 @@ import {
 } from "./context/favoritecontext/Contextfavo";
 import Favoriteitem from "./feature/doctorfavorite/Favoriteitem";
 import { Authprovider } from "./context/AuthContext/Authenticationcxt";
-import Loginpage from "./component/page/Doctorsfilter/loginpage/Loginpage";
+import Loginpage from "./component/page/loginpage/Loginpage";
 import Protectroutes from "./component/common/Protectroutes";
+import Footer from "./component/common/footer/Footer";
+import About from "./component/page/about/About";
 
 // 1️⃣ عملنا مكون داخلي جديد عشان نقدر نستخدم جواهُ الـ Hook بسلام
 function AppRoutes() {
@@ -24,6 +26,7 @@ function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/doctors" element={<Doctorpage />} />
         <Route path="/profile/:id" element={<Profile />} />
+        <Route path="/about" element={<About/>} />
         <Route
           path="/favo"
           element={
@@ -34,6 +37,7 @@ function AppRoutes() {
         />
         <Route path="/Login" element={<Loginpage />} />
       </Routes>
+      <Footer/>
     </>
   );
 }
@@ -41,15 +45,13 @@ function AppRoutes() {
 // 2️⃣ الـ App الأساسي بيغلف كل حاجة بالـ Provider
 function App() {
   return (
-     <Authprovider>
-    <FavoritesProvider>
-     
+    <Authprovider>
+      <FavoritesProvider>
         <div className="App">
           <AppRoutes />
         </div>
-   
-    </FavoritesProvider>
-       </Authprovider>
+      </FavoritesProvider>
+    </Authprovider>
   );
 }
 

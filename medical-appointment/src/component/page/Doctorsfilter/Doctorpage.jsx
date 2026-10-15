@@ -42,9 +42,9 @@ function Showcontent({ data }) {
           </div>
           <div className="doc-details">
             <h6>{item.name}</h6>
-            <p>{item.specialty}</p>
-            <p>{item.rating}</p>
-            <p>
+            <p className="specialty_doc">{item.specialty}</p>
+            <p className="rating_doc">{item.rating}</p>
+            <p className="location_doc">
               <FaMapMarkerAlt color="#6B7280" /> {item.location}
             </p>
           </div>

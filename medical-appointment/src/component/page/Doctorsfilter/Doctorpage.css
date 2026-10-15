@@ -186,3 +186,26 @@ width: 40px;
 text-align: center;
 cursor: pointer;
 }
+
+@media (max-width:630px){
+    .one-doc{
+        flex-direction: column;
+    }
+    .Book-Appointment{
+        flex-direction: row;
+        margin: 10px 0px;
+    }
+}
+ 
+
+
+@media (max-width:580px){
+    .doc-details{
+        align-items: center;
+        justify-content: center;
+    }
+    .rating_doc,.location_doc{
+display: none;
+    }
+    
+}
