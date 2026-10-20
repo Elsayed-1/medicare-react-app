@@ -9,7 +9,10 @@ import {
 import { BsArrowRight } from "react-icons/bs";
 import { doctorsData } from "../../data/Doctorsdata";
 import "./doctors.css";
+import { Link, useNavigate } from "react-router-dom";
 function Doctorshome() {
+
+  const nave=useNavigate()
   //handelstar
   function handelstar(rate) {
     const stars = [];
@@ -31,10 +34,13 @@ function Doctorshome() {
       <div className="container-lg">
         <div className="headDoctorshome">
           <h3>Popular doctors</h3>
-          <p>
-            <a href="#">
+          <p onClick={()=>{nave("/doctors")}} >
+            
+             
               viwe all <BsArrowRight />{" "}
-            </a>
+           
+            
+            
           </p>
         </div>
         <div className="Alldoctors row ">

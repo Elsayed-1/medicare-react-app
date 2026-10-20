@@ -6,6 +6,18 @@
     justify-content: space-between;
     margin: 5px;
 }
+.headDoctorshome p{
+    color: blueviolet;
+    cursor: pointer;
+    /* border: 1px black solid; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px ;
+    padding: 2px;
+    transition: all .3s ease;
+}
+.headDoctorshome p:hover{
+    transform: scale(1.01);
+}
 .carddoc{
      margin: 30px 0px;
 }
