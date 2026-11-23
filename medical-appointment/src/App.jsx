@@ -15,6 +15,7 @@ import Protectroutes from "./component/common/Protectroutes";
 import Footer from "./component/common/footer/Footer";
 import About from "./component/page/about/About";
 import { useState } from "react";
+import Chatbot from "./component/common/Aichat/Chatbot";
 
 // 1️⃣ عملنا مكون داخلي جديد عشان نقدر نستخدم جواهُ الـ Hook بسلام
 function AppRoutes() {
@@ -38,6 +39,7 @@ function AppRoutes() {
         />
         <Route path="/Login" element={<Loginpage />} />
       </Routes>
+      <Chatbot/>
       <Footer/>
     </>
   );

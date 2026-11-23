@@ -13,7 +13,23 @@ import Doctorshome from "../../home/Doctorshome";
 import { Link } from "react-router-dom";
 import { usefavorites } from "../../../context/favoritecontext/Contextfavo";
 
+// import { useDispatch, useSelector } from "react-redux";
+
+// import { addfavo } from "../../../redux/slices/Reduxslice";
+
 function filterbyinputsearch(data, inputsearch, checkeditem, filterstars) {
+  
+  // const slicedata=useSelector((state)=>
+  // {
+  //   console.log("-----------------------")
+  //       console.log(state.favo.value)
+  //   console.log("-----------------------")
+
+  // })
+
+
+
+
   return data.filter((e) => {
     const matchesName = e.name
       .toLowerCase()
@@ -26,6 +42,7 @@ function filterbyinputsearch(data, inputsearch, checkeditem, filterstars) {
 }
 
 function Showcontent({ data }) {
+    // const dispatch=useDispatch()
   const { favo, toggle } = usefavorites();
 
 
@@ -54,7 +71,8 @@ function Showcontent({ data }) {
           <span onClick={() => toggle(item)}>
             {" "}
             {isfavo ? (
-              <FaHeart style={{ color: "#ef4444", fontSize: "22px" }} />
+              // onClick={() => dispatch(addfavo(item))}
+              <FaHeart  style={{ color: "#ef4444", fontSize: "22px" }} />
             ) : (
               <FaRegHeart style={{ color: "#64748B", fontSize: "22px" }} />
             )}{" "}

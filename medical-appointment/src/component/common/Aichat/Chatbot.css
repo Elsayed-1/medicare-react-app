@@ -1,0 +1,31 @@
+
+
+.chatbot   {
+   
+    width: 55px;
+    height: 55px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* ظل ناعم */
+  cursor: pointer;
+  transition: all 0.4s ease;
+background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);  
+}
+.chatbot:hover{
+transform: scale(1.1) rotate(5deg); /* بيكبر سنة وبيميل بسيط */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #1d4ed8 0%, #60a5fa 100%);
+}
+.chatbot .name_caht{
+    font-size: 28px;
+    font-weight: 700;
+    position: absolute;
+   font-family: "Playball", cursive;
+   color: white;
+   letter-spacing: 1px;
+}
